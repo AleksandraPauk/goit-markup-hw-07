@@ -28,8 +28,12 @@
         padding-bottom: 32px;
         padding-top: 32px;
         transition: color 250ms var(--timing-function);
+        
+        &--current {
+            position: relative;
+        }
 
-        &::after {
+        &--current::after {
             content: "";
             position: absolute;
             width: 100%;
@@ -40,26 +44,17 @@
             background-color: var(--link-color);
             border-radius: 4px;
         }
-
+        
         &:hover,
         &:focus,
         &--current {
             color: var(--link-color);
         }
 
-        &--current {
-            position: relative;
+        &--grey {
+            color: var(--primary-text-color);     
         }
-        
-        &--contacts {
-            color: var(--primary-text-color);
-
-                &:hover,
-                &:focus {
-                    color: var(--link-color);
-                }
-            }
-        }
+    }
 
     &__list {
         display: flex;
@@ -79,11 +74,11 @@
         margin-right: 10px;
         transition: fill 250ms var(--timing-function);
 
-        .header__link--contacts:hover & {
+        .header__link:hover & {
             fill: var(--link-color);
         }
 
-        .header__link--contacts:focus & {
+        .header__link:focus & {
             fill: var(--link-color);
         }
     }

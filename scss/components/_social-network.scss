@@ -28,7 +28,7 @@
             background-color: var(--link-color);
         }
         &--dark {
-            background-color: #44454E;
+            fill: #44454E;
             border-radius: 50%;
             transition: background-color 250ms var(--timing-function);
 
@@ -37,15 +37,15 @@
                 background-color: var(--link-color);
             }
         }
+    }
 
-        &__icon {
-            fill: #AFB1B8;
-            transition: fill 250ms var(--timing-function);
+    &__icon {
+        fill: #AFB1B8;
+        transition: fill 250ms var(--timing-function);
 
-            .social-network__item:hover &,
-            .social-network__item:focus & {
-                fill: var(--accent-color);
-            }
+        .social-network__item:hover &,
+        .social-network__item:focus & {
+            fill: var(--accent-color);
         }
     }
 }

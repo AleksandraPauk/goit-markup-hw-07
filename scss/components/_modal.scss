@@ -177,10 +177,11 @@
     }
     
      &__button {
-        margin: 0 auto;
-    
-        &:focus-visible {
-            outline: none;
+        display: flex;
+        justify-content: center;
+        
+        &--visible {
+          outline: none;
         }
     }
 }
